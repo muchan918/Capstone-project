@@ -33,16 +33,32 @@ https://github.com/user-attachments/assets/5fe8a444-0b40-4d1f-b5eb-be924d136db9
 - 충돌 감지를 통해 테이블, 선반 등의 표면 위에 배치되도록 구현
 - 자연스러운 place를 위해 target object와 robot의 벡터를 계산하여 로봇 관점에서 가장 가까운 가장자리에 배치
 - place desk_01과 같은 명령을 입력하면 손에 들고 있는 물체를 desk_01위에 올려놓음
+
+https://github.com/user-attachments/assets/38ef61f5-51d7-48f3-b4ec-832cc1b748b4
+
 ### open/close
 문을 열고 닫는 기능
 - asset store에 있는 door 스크립트 활용
 - open labdoor_01 / close classroomdoor_01 과 같은 명령어 입력
+
+https://github.com/user-attachments/assets/e120610e-aff2-4a26-b879-08c1d7914088
+
 ### switch/switchon/switchoff
 방 안에 있는 light를 켜고 끄는 기능
 - Unity Light Component와 연결해 On/Off 상태 변경
 - switch light_01 / switchon light_02 / switchoff light_03 과 같은 명령어 입력
+  
+https://github.com/user-attachments/assets/5c5c0695-f3f7-484c-a8ac-1ca71dcb5779
+
 ### export
 시뮬레이션 내 로봇과 객체 상태를 JSON형태로 추출하는 명령
+- LLM 플래너가 최신 월드 상태를 읽어 grounding/플래닝에 활용할 수 있도록 설계
 - 로봇 좌표, 오브젝트 위치, light상태, open/close 상태 등을 기록
 - 통신을 통해 LLM planner에게 정보를 업데이트 해주기 위한 기능
+- AABB를 이용해 static objcet와 object간의 관계를 파악하여 object에 on 상태 부여
+- 
+### LLM Planner와 연결 후 싷행
+
+https://github.com/user-attachments/assets/3bc8a8f2-9100-4d93-af4a-8153a17739dc
+
 
