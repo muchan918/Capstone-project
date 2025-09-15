@@ -17,13 +17,15 @@
 ### move
 로봇을 특정 오브젝트 앞으로 이동시키는 기능
 - NavMeshAgent를 활용해 경로를 계산하고 이동 수행
-- move desk_01과 같은 명령을 입력하면 해당 위치를 탐색 후 로봇이 이동
+- move desk_01과 같은 명령을 입력하면 해당 위치를 탐색 후 로봇이 
+
 https://github.com/user-attachments/assets/9d129628-e26a-4d33-b04d-e941be7ed3ff
 
 ### pick
 로봇이 물체를 집는 기능
 - HandTransform에 object를 attach시킨다
 - pick book_01과 같은 명령을 입력하면 book_01이 손에 붙는 동작 수행
+  
 https://github.com/user-attachments/assets/5fe8a444-0b40-4d1f-b5eb-be924d136db9
 
 ### place
